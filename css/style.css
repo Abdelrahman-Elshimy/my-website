@@ -268,7 +268,6 @@ body
        border-radius: 10px;
        border: 1px solid #aaaaaa;
        
-       
      }
      .skills .skill p {
        font-family: var(--Snigle-font);
@@ -291,4 +290,52 @@ body
     }
     .portfolio .portfolio-description p {
       font-family: var(--Rubik);
+    }
+
+    #hexagon {
+      width: 100px;
+      height: 55px;
+      background: #eeeeee;
+      position: absolute;
+      z-index: 9999;
+      top: -25px;
+      text-align: center;
+      padding-top: 10px;
+    }
+    #hexagon:before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 25px solid #eeeeee;
+    }
+    #hexagon:after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 25px solid #eeeeee;
+    }
+    #hexagon img {
+      height: 35px;
+      width: 35px;
+    }
+
+    .portfolio .card-img-top {
+      height: 600px;
+      width: 100%;
+      margin-top: 0px;
+      transition: all 3s ease-in-out;
+    }
+    .portfolio .card-img-top:hover {
+
+      margin-top: -400px;
     }
