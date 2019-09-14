@@ -13,6 +13,16 @@ body
     overflow-x: hidden;
     background: white;
 }
+.first-head-section {
+  color: #999999;
+  font-family: var(--Snigle-font);
+  font-size: 15px;
+}
+.second-head-section {
+  font-family: var(--Patua);
+  font-size: 22px;
+  color: #444444;
+}
 /* store all variables and fonts and colors ********/
 :root {
     --Snigle-font: "Sniglet",cursive;
@@ -106,6 +116,21 @@ body
     font-family: var(--Rubik);
     font-size: 30px;
     letter-spacing: 2px;
+  }
+  .cv a{
+    border: 1px solid #eeeeee;
+    display: inline-block;
+    padding: 7px 30px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+    font-family: var(--Snigle-font);
+    font-size: 17px;
+  }
+  .top .cv a:hover {
+    background: #eeeeee;
+    color: #000000;
   }
   .top img {
     border-radius: 50%;
@@ -215,6 +240,7 @@ body
      /* start style about  */
      .about {
        margin-top: 60px;
+      
      }
      .about h1{
         font-size: 30px;
@@ -229,15 +255,18 @@ body
      /* start style skills section  */
      .skills {
        margin-top: 80px;
+       background: #eeeeee;
+       padding: 30px 0;
      }
      .skills .skill {
-       border: 1px solid #aaaaaa;
-       border-radius: 5px;
        margin-bottom: 20px;
      }
      .skills .skill > div {
        align-items: center;
        padding: 10px 30px;
+       background: #ffffff;
+       border-radius: 10px;
+       border: 1px solid #aaaaaa;
        
        
      }
@@ -247,4 +276,19 @@ body
      }
      .skills img {
        width: 30px;
+       height: 30px;
      }
+
+
+     /* portfolio section  */
+    .portfolio a {
+      text-decoration: none;
+      border: 1px solid #eeeeee;
+      padding: 2px 15px !important;
+    }
+    .portfolio .portfolio-description {
+        align-items: center;
+    }
+    .portfolio .portfolio-description p {
+      font-family: var(--Rubik);
+    }
