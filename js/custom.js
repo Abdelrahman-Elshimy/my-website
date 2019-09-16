@@ -11,15 +11,18 @@ setInterval(function () {
     counter++;
 }, 500);
 
-
-// $(document).ready(function(){
-//     $(".tabs-types p").click(function(){
-//       $(this).addClass('active').siblings().removeClass('active');
-//     });
-//   });
+// go to specific section
+$(document).ready(function(){
+    $('.menu-items a').click(function(e){
+        e.preventDefault();
+        $('body, html').animate({
+          scrollTop: $('#' + $(this).data('scroll')).offset().top
+        }, 2000);
+      });
+  });
 tabcontent = document.getElementsByClassName("tabcontent");
 for (i = 0; i < tabcontent.length; i++) {
-    if (i == 0) {
+    if (i == tabcontent.length - 1) {
         tabcontent[i].style.display = "block";
     }
     else {
@@ -39,4 +42,6 @@ function openForm(evt, typeForm) {
     document.getElementById(typeForm).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+
 
