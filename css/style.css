@@ -1,7 +1,7 @@
 
 
   /*** Google Fonts ******************/
-@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme|Patua+One|Rubik|Sniglet&display=swap');
 
 * {
     box-sizing: border-box;
@@ -28,7 +28,6 @@ body
     --Snigle-font: "Sniglet",cursive;
     --Rubik: "Rubik",cursive;
     --Patua: "Patua One",cursive;
-    --Lobster: "Lobster",cursive;
     --light-black: #2e2c2caf;
     --bggradient: linear-gradient(to bottom, #dd2476, #ff512f );
     --light-gray: rgba(255, 255, 255, 1);
@@ -340,10 +339,79 @@ body
       margin-top: -400px;
     }
 
+    /* start contact style  */
+    .contact {
+      background: #eeeeee;
+      padding: 30px 0;
+    }
+    .contact .tabs-types {
+      background: #ffffff;
+      /* border: 1px solid #cccccc; */
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    }
+    .contact .tabs-types p {
+      margin-bottom: 20px;
+      font-size: 16px;
+      font-family: var(--Snigle-font);
+      background: #eeeeee;
+      font-weight: normal;
+      cursor: pointer;
+      padding: 10px 20px;
+    }
+    .contact .tabs-types p.active {
+      background: #cccccc;
+      color: #ffffff;
+    }
+    .contact .tabs-types span {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 30px;
+      font-family: var(--Rubik);
+      font-weight: 600;
+    }
+    .contact .tabs-types p:last-child {
+      margin-bottom: 0px;
+    }
+    .contact input, .contact textarea { 
+      font-size: 13px;
+      font-family: var(--Rubik);
+      letter-spacing: 1.3px;
+    }
+    .contact label {
+      font-size: 17px;
+      font-family: var(--Snigle-font);
+    }
+    .contact .form-group {
+      font-family: var(--Rubik);
+      letter-spacing: 1.2px;
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
 
+    .contact .form-group input[type="submit"] {
+      background-image: linear-gradient(to right, rgba(255,0,0,.2), rgba(255,0,0,.5), rgba(255,0,0,.7));
+      border: none;
+      padding: 15px 60px;
+      font-size: 18px;
+      font-family: var(--Snigle-font);
+      color: #ffffff;
+      border-radius: 10px;
+    }
 
     /* style footer  */
-    footer span {
-      font-size: 20px;
+    footer .container > span {
+      font-size: 18px;
       font-family: var(--Rubik);
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
+    footer  {
+      text-decoration: none !important;
+      color: #eeeeee;
+      font-size: 16px;
+      font-family: var(--Patua);
+      letter-spacing: 1.2px;
+    }
+  
