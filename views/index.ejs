@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Abdelrahman Lotfy</title>
+</head>
+
+<body>
+    <section class="message-contact">
+        <% if ( messages === 'success') { %>
+            <div class="alert alert-success" role="alert">
+                <div class="d-flex justify-content-between" style="align-items: center;">
+                    <img src="images/form/sf/problem-solved.png" alt="success" width="20px" class="mr-3">
+                    <span>Your request has been sent successfully</span>
+                </div>
+              </div>
+        <% } %>
+        <% if ( messages === 'failed') { %>
+            <div class="alert alert-danger" role="alert">
+                <div class="d-flex justify-content-between" style="align-items: center;">
+                    <img src="images/form/sf/error.png" alt="error" width="20px" class="mr-3">
+                    <span>Your request has not been sent successfully</span>
+                </div>
+              </div>
+        <% } %>
+    </section>
+
+    <section class="top text-center">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="m-auto">
+                <div class="profile-image mt-5">
+                    <img src="images/profile.jpg" alt="Profile Image" width="200px">
+                </div>
+                <div class="profile-name mt-5 mb-3">
+                    <h1 class="text-light">
+                        <span>A</span><span>b</span><span>d</span><span>e</span><span>l</span><span>r</span><span>a</span><span>h</span><span>m</span><span>a</span><span>n</span>
+                        <span class="pl-2">L</span><span>o</span><span>t</span><span>f</span><span>y</span>
+                    </h1>
+                </div>
+                <div class="profile-description">
+                    <h3 class="text-light">Full-Stack Web and Mobile Developer</h3>
+                </div>
+                <div class="cv mt-3">
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- </div> -->
+
+
+
+    <main>
+        <!-- section menu  -->
+        <section class="menu">
+
+            <div class="menu-items">
+                <a data-scroll="about">
+                    <div class="d-flex">
+                        <p class="mr-auto">About</p>
+                        <img src="images/about.png" width="20" alt="About">
+                    </div>
+                </a>
+                <a data-scroll="skills">
+                    <div class="d-flex">
+                        <p class="mr-auto">Skills</p>
+                        <img src="images/skills.png" width="20" alt="Skills">
+                    </div>
+                </a>
+                <a data-scroll="portfolio">
+                    <div class="d-flex">
+                        <p class="mr-auto pr-3">Portfolio</p>
+                        <img src="images/briefcase.png" width="20" alt="Portfolio">
+                    </div>
+                </a>
+                <a data-scroll="contact">
+                    <div class="d-flex">
+                        <p class="mr-auto">Contact</p>
+                        <img src="images/network.png" width="20" alt="Contact">
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- section main skills  -->
+        <section class="main-skills">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="div bg-light text-center">
+                            <img src="images/nodejs.png" alt="Node Js" class="img-responsive">
+                            <p>Node Js</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="div bg-light text-center">
+                            <img src="images/laravel.png" alt="Laravel" class="img-responsive">
+                            <p>Laravel</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="div bg-light text-center">
+                            <img src="images/angular.png" alt="Angular" class="img-responsive">
+                            <p>Angular</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="div bg-light text-center">
+                            <img src="images/flutter.png" alt="Flutter" class="img-responsive">
+                            <p>Flutter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- about me section  -->
+
+        <section class="about mb-5 pt-5" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <div class="about-image">
+                            <img src="images/about-us.png" alt="About">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-text">
+                            <h1 class="mb-5 mt-2">About Me</h1>
+                            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                                voluptatibus numquam
+                                perspiciatis maxime beatae eligendi veniam quo expedita reprehenderit assumenda?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quo amet numquam
+                                ratione eaque eum, laboriosam laudantium iste fuga voluptatem nemo atque, distinctio
+                                quia aspernatur est accusamus rem maxime. Nulla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills section  -->
+
+        <section class="skills" id="skills">
+            <div class="container">
+                <p class="mt-3 mb-3 first-head-section">MY SPECIALTY</p>
+                <p class="mb-5 second-head-section">MY SKILLS</p>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="HTML is used to create pages that diplay on browser">
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">HTML</p>
+                                <img src="images/html-5.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top" title="Style html pages">
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">CSS</p>
+                                <img src="images/css.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="Backend programmming language to create dynamic websites by java-script">
+
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">Node Js</p>
+                                <img src="images/nodejs.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="Backend programmming language to create dynamic websites by php">
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">PHP</p>
+                                <img src="images/php.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="PHP Framework to build strong web application and API">
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">Laravel</p>
+                                <img src="images/laravel.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="Data base type connected to Node Js And PHP">
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">My SQL</p>
+                                <img src="images/mysql.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="Data base type connected to Node Js">
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">Mongo DB</p>
+                                <img src="images/monog.jpg" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="Create real time application like chat">
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">Web Socket</p>
+                                <img src="images/websocket.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="A Framewort that perform SPA">
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">Angular</p>
+                                <img src="images/angular.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="Create Mobile Apps that work on Android IOS And Windows Phone">
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">Ionic</p>
+                                <img src="images/ionic.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="Create Mobile Apps that work on Android IOS">
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">Flutter</p>
+                                <img src="images/flutter.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="Css Framework to make style easy">
+                            <div class="d-flex flex-row justify-content-center">
+
+                                <p class=" mr-auto">Bootstrap</p>
+                                <img src="images/bootstrap.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top"
+                            title="language to make our website more dynamic more responsive with events">
+                            <div class="d-flex flex-row justify-content-center">
+                                <p class=" mr-auto">Java Script</p>
+                                <img src="images/java-script.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top" title="library from javascript">
+                            <div class="d-flex flex-row justify-content-center">
+                                <p class=" mr-auto">JQuery</p>
+                                <img src="images/jq.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="skill" data-toggle="tooltip" data-placement="top" title="Github">
+                            <div class="d-flex flex-row justify-content-center">
+                                <p class=" mr-auto">Github</p>
+                                <img src="images/github.png" alt="nodejs" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Portfolio section  -->
+        <section class="portfolio mt-4 mb-5" id="portfolio">
+            <div class="container">
+                <p class="mt-3 mb-3 first-head-section">MY WORK</p>
+                <p class="mb-5 second-head-section">RECENT WORK</p>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-5 mt-4">
+                        <div class="port-content">
+                            <div id="hexagon">
+                                <img src="images/smartphone.png" alt="">
+                            </div>
+                            <div class="card">
+                                <div class="card-image" style="height: 200px; overflow: hidden;">
+                                    <img src="images/donate.png" class="card-img-top" alt="Donation Project">
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row portfolio-description">
+                                        <div class="pro-desc mr-auto">
+                                            <p class="lead">Blood Donation App</p>
+                                        </div>
+                                        <a href="https://github.com/Abdelrahman-Elshimy/B-Hero/tree/master/bloodhero"
+                                            target="_blank" class="btn btn-primary">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mt-4">
+                        <div class="port-content">
+                            <div id="hexagon">
+                                <img src="images/data.png" alt="">
+                            </div>
+                            <div class="card">
+                                <div class="card-image" style="height: 200px; overflow: hidden;">
+                                    <img src="images/lawyer.jpg" class="card-img-top" alt="Lawyer Project">
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row portfolio-description">
+                                        <div class="pro-desc mr-auto">
+                                            <p class="lead">Lawyer Website</p>
+                                        </div>
+                                        <a href="https://github.com/Abdelrahman-Elshimy/Lawer-website" target="_blank"
+                                            class="btn btn-primary">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mt-4">
+                        <div class="port-content">
+                            <div id="hexagon">
+                                <img src="images/data.png" alt="">
+                            </div>
+                            <div class="card">
+                                <div class="card-image" style="height: 200px; overflow: hidden;">
+                                    <img src="images/cancer-day.jpg" class="card-img-top" alt="Cancer Project">
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row portfolio-description">
+                                        <div class="pro-desc mr-auto">
+                                            <p class="lead">Cancer Day Website</p>
+                                        </div>
+                                        <a href="https://hardcore-lichterman-b646de.netlify.com/" target="_blanc"
+                                            class="btn btn-primary">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mt-4">
+                        <div class="port-content">
+                            <div id="hexagon">
+                                <img src="images/smartphone.png" alt="">
+                            </div>
+                            <div class="card">
+                                <div class="card-image" style="height: 200px; overflow: hidden;">
+                                    <img src="images/shop.png" class="card-img-top" alt="Shop Project">
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row portfolio-description">
+                                        <div class="pro-desc mr-auto">
+                                            <p class="lead">Shop App</p>
+                                        </div>
+                                        <a href="https://github.com/Abdelrahman-Elshimy/ElropyApp/tree/master/elropy"
+                                            target="_blank" class="btn btn-primary">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mt-4">
+                        <div class="port-content">
+                            <div id="hexagon">
+                                <img src="images/data.png" alt="">
+                            </div>
+                            <div class="card">
+                                <div class="card-image" style="height: 200px; overflow: hidden;">
+                                    <img src="images/dashboard.jpg" class="card-img-top" alt="Dashboard Project">
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row portfolio-description">
+                                        <div class="pro-desc mr-auto">
+                                            <p class="lead">Dashboard Design</p>
+                                        </div>
+                                        <a href="https://naughty-mayer-e89487.netlify.com/" target="_blanc"
+                                            class="btn btn-primary">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mt-4">
+                        <div class="port-content">
+                            <div id="hexagon">
+                                <img src="images/smartphone.png" alt="">
+                            </div>
+                            <div class="card">
+                                <div class="card-image" style="height: 200px; overflow: hidden;">
+                                    <img src="images/news.png" class="card-img-top" alt="News Project">
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row portfolio-description">
+                                        <div class="pro-desc mr-auto">
+                                            <p class="lead">News App</p>
+                                        </div>
+                                        <a href="https://github.com/Abdelrahman-Elshimy/news-app/tree/master/news_app"
+                                            target="_blank" class="btn btn-primary">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mt-4">
+                        <div class="port-content">
+                            <div id="hexagon">
+                                <img src="images/api.png" alt="">
+                            </div>
+                            <div class="card">
+                                <div class="card-image text-center" style="height: 200px; overflow: hidden;">
+                                    <img src="images/api-image.jpg" alt="Api Project">
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row portfolio-description">
+                                        <div class="pro-desc mr-auto">
+                                            <p class="lead">Shop Management Api</p>
+                                        </div>
+                                        <a href="https://github.com/Abdelrahman-Elshimy/ElropyApi/tree/master/elropy"
+                                            target="_blank" class="btn btn-primary">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mt-4">
+                        <div class="port-content">
+                            <div id="hexagon">
+                                <img src="images/data.png" alt="">
+                            </div>
+                            <div class="card">
+                                <div class="card-image" style="height: 200px; overflow: hidden;">
+                                    <img src="images/fin.jpg" class="card-img-top" alt="Finance Project">
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row portfolio-description">
+                                        <div class="pro-desc mr-auto">
+                                            <p class="lead">Financial Website</p>
+                                        </div>
+                                        <a href="https://abdo.neocities.org/" target="_blank"
+                                            class="btn btn-primary">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5 mt-4">
+                        <div class="port-content">
+                            <div id="hexagon">
+                                <img src="images/api.png" alt="">
+                            </div>
+                            <div class="card">
+                                <div class="card-image text-center" style="height: 200px; overflow: hidden;">
+                                    <img src="images/api-image.jpg" alt="Api Project">
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row portfolio-description">
+                                        <div class="pro-desc mr-auto">
+                                            <p class="lead">News Api</p>
+                                        </div>
+                                        <a href="https://github.com/Abdelrahman-Elshimy/ElropyApi/tree/master/elropy"
+                                            target="_blank" class="btn btn-primary">View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- start section contact us  -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <p class="mb-3 first-head-section">GET IN TOUCH</p>
+                <p class="mb-5 second-head-section">Contact</p>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 mb-4 col-lg-4">
+                        <div class="tabs-types">
+                            <span>How can I help you ?</span>
+                            <p onclick="openForm(event, 'web')" class="tablinks">Front-End/Back-End Developement
+                            </p>
+                            <p onclick="openForm(event, 'mobile')" class="tablinks">Mobile Application Developement</p>
+                            <p onclick="openForm(event, 'else')" class="tablinks active">Something Else</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-8">
+                        <div class="tabs-content">
+                            <div id="web" class="tabcontent">
+                                <form method="post">
+                                    <div class="form-group">
+                                        <label for="type" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/responsive.png"
+                                                    alt="Project Type" width="30px">
+                                                <span>Project Type</span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <input class="ml-3" type="radio" checked name="type" id="type" value="front">
+                                        Front-End<br><br>
+                                        <input class="ml-3" type="radio" name="type" id="type" value="back">
+                                        Back-End<br><br>
+                                        <input class="ml-3" type="radio" name="type" id="type" value="both">
+                                        Full-Stack<br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="language" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/cloud-coding.png"
+                                                    alt="Project Type" width="30px">
+                                                <span>Favorite Language</span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <input class="ml-3" type="radio" checked name="language" id="language" value="laravel">
+                                        Laravel<br><br>
+                                        <input class="ml-3" type="radio" name="language" id="language" value="node">
+                                        Node
+                                        Js<br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="details" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/idea.png"
+                                                    alt="about project" width="30px">
+                                                <span>Subscribe Your Project ?</span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <textarea required name="details" id="details" rows="3" class="form-control"
+                                            placeholder="Tell me more about your project"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="reason" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/rating.png"
+                                                    alt="about project" width="30px">
+                                                <span>Why did you choose to work with me?
+                                                </span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <textarea name="reason" id="reason" rows="2" class="form-control"
+                                            placeholder="Some nice words"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/name.png"
+                                                    alt="about project" width="30px">
+                                                <span>Full Name
+                                                </span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <input required type="text" name="name" id="name" class="form-control"
+                                            placeholder="Abdelrahman Lotfy"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/email.png"
+                                                    alt="about project" width="30px">
+                                                <span>Email Address
+                                                </span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <input required type="email" name="email" id="email" class="form-control"
+                                            placeholder="example@gmail.com"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Send"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="mobile" class="tabcontent">
+                                <form method="post">
+
+                                    <div class="form-group">
+                                        <label for="platform" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/cross-platform.png"
+                                                    alt="Project Type" width="30px">
+                                                <span>Favorite Platform</span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <input class="ml-3" type="radio" name="platform" id="platform" value="ionic">
+                                        Ionic<br><br>
+                                        <input class="ml-3" type="radio" checked name="platform" id="platform" value="flutter">
+                                        Flutter
+                                        <br>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="details" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/idea.png"
+                                                    alt="about project" width="30px">
+                                                <span>Subscribe Your Project ?</span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <textarea required name="details" id="details" rows="3" class="form-control"
+                                            placeholder="Tell me more about your project"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="reason" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/rating.png"
+                                                    alt="about project" width="30px">
+                                                <span>Why did you choose to work with me?
+                                                </span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <textarea name="reason" id="reason" rows="2" class="form-control"
+                                            placeholder="Some nice words"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/name.png"
+                                                    alt="about project" width="30px">
+                                                <span>Full Name
+                                                </span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <input required type="name" name="name" id="name" class="form-control"
+                                            placeholder="Abdelrahman Lotfy"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/email.png"
+                                                    alt="about project" width="30px">
+                                                <span>Email Address
+                                                </span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <input required type="email" name="email" id="email" class="form-control"
+                                            placeholder="example@gmail.com"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Send"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="else" class="tabcontent">
+                                <form method="post" onsubmit="return Validate()" name="elseForm">
+
+                                    <div class="form-group">
+                                        <label for="name" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/name.png"
+                                                    alt="about project" width="30px">
+                                                <span>Full Name
+                                                </span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <input required type="name" name="name" id="elseName" class="form-control"
+                                            placeholder="Abdelrahman Lotfy">
+                                            <div id="getErrorname" style="color:red;height: 20px;"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/email.png"
+                                                    alt="about project" width="30px">
+                                                <span>Email Address
+                                                </span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <input required type="email" name="email" id="elseEmail" class="form-control"
+                                            placeholder="example@gmail.com">
+                                            <div id="getErrorEmail" style="color:red;height: 20px;"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message" style="display: block;">
+                                            <div class="d-flex" style="align-items: center;">
+                                                <img class="img-responsive mr-2" src="images/form/message.png"
+                                                    alt="message" width="30px">
+                                                <span>What is your message ?
+                                                </span>
+                                            </div>
+                                        </label>
+                                        <br>
+                                        <textarea required title="Type your message" name="message" id="message" rows="4" class="form-control"
+                                            placeholder="Message"></textarea>
+                                        <div id="getErrorMessage" style="color:red;height: 20px;"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Send" onclick="getElseError()"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-center">
+        <div class="container pt-3 pb-3">
+            <div class="d-flex flex-wrap flex-row justify-content-between mb-3" style="align-items: center">
+                <a href="https://github.com/Abdelrahman-Elshimy/" target="_blank" class="mb-4">
+                    <img src="images/github.png" alt="Github" width="40px">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100004897872898" target="_blank" class="mb-4">
+                    <img src="images/form/footer/facebook.png" alt="Github" width="40px">
+                </a>
+                <a href="https://www.linkedin.com/in/abdelrahaman-lotfy/" target="_blank" class="mb-4">
+                    <img src="images/form/footer/linkedin.png" alt="Github" width="40px">
+                </a>
+
+                <div class="d-flex mb-4" style="align-items: center">
+                    <img src="images/form/email.png" alt="email" width="50px" class="pr-2 mr-2">
+                    <span>abdelrahmanlotfy609@gmail.com</span>
+                </div>
+                <div class="d-flex mb-4" style="align-items: center">
+                    <img src="images/form/footer/mobile-phone.png" alt="email" width="30px" class="pr-2 mr-2">
+                    <span>01124841951</span>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <span class="text-light">
+                &copy; Abdelrahman Lotfy
+            </span>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
