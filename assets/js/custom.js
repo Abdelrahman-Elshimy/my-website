@@ -13,6 +13,22 @@ setInterval(function () {
 
 // go to specific section
 $(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() + $(window).height() - 100 > $(window).height()) {
+            $('.totop').fadeIn(400);
+        }
+        else {
+            $('.totop').fadeOut(400);
+        }
+        
+    });
+    $('.totop').click(function(){
+        $('body, html').animate({
+            scrollTop: 0,
+        }, 1000);
+    });
+
+
     $('.menu-items a').click(function (e) {
         e.preventDefault();
         $('body, html').animate({

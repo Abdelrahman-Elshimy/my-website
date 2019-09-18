@@ -17,6 +17,10 @@ app.set('view engine', 'ejs');
 
 app.use(homeRoutes);
 
+app.use((req, res, next) => {
+    res.render('404');
+}); 
+
 const port = process.env.PORT || 3000;
 
 
