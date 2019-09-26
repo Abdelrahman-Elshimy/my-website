@@ -107,13 +107,13 @@ body
       letter-spacing: 3px;
   }
  .top .profile-name h1 span{
-      font-size: 30px;
+      font-size: 27px;
       display: none;
   } 
   
   .top .profile-description h3 {
     font-family: var(--Rubik);
-    font-size: 30px;
+    font-size: 27px;
     letter-spacing: 2px;
   }
   .cv a{
